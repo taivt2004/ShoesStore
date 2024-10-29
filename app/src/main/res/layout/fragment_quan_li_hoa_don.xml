@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragmentAdmin.Fragment_quan_li_san_pham">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_quan_li_hoa_don"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="#ff0000"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_quan_li_hoa_don"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

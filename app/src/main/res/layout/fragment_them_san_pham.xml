@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="420dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#EAD6C7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/welcome"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_View_them_anh"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/upload"/>
+    <EditText
+        android:id="@+id/edt_them_ten_sp"
+        android:layout_below="@+id/img_View_them_anh"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:imeOptions="actionSend"
+        android:background="@drawable/custom_btn_logout"
+        android:hint="Tên sản phẩm"/>
+    <EditText
+        android:id="@+id/edt_them_mo_ta"
+        android:layout_below="@+id/edt_them_ten_sp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:background="@drawable/custom_btn_logout"
+        android:hint="Thông tin sản phẩm"/>
+    <EditText
+        android:id="@+id/edt_them_gia_san_pham"
+        android:layout_below="@+id/edt_them_mo_ta"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/custom_btn_logout"
+        android:hint="Giá"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/edt_them_gia_san_pham"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_them_san_pham"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="Thêm sản phẩm"
+            android:background="@drawable/custom_btn"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

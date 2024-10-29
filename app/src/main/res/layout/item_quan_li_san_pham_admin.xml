@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:layout_margin="22dp"
+    app:cardCornerRadius="10dp"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/on_long_click_item"
+        android:layout_width="350dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/ivImage_sanpham"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vans" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/custom_item"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="2dp">
+
+            <TextView
+                android:id="@+id/txtTen_sanpham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="serif"
+                android:maxLines="1"
+                android:text="Air Force 1 Shadow"
+                android:textSize="11sp"
+                android:padding="3dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtThong_tin_san_pham"
+                android:layout_width="300dp"
+                android:layout_height="25dp"
+                android:text="Thong tin san pham"
+                android:textSize="11sp"
+                android:layout_below="@id/txtTen_sanpham"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="3dp"
+                />
+
+            <TextView
+                android:id="@+id/txtGia_sanpham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtThong_tin_san_pham"
+                android:text="95$"
+                android:textSize="12sp"
+                android:padding="3dp"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

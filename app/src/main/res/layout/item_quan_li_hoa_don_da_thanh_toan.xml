@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:layout_margin="15dp">
+
+    <LinearLayout
+        android:id="@+id/ln_hd_da_thanh_toan"
+        android:orientation="vertical"
+        android:background="@drawable/custom_hoa_don"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_ma_don_hang_admin1"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ma don hang"
+            android:textColor="#000000"
+            android:layout_margin="3dp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_ten_khach_hang_admin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ten khach hang"
+            android:textColor="#000000"
+            android:layout_margin="3dp"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/tv_dia_chi_don_hang_admin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dia chi"
+            android:textColor="#000000"
+            android:layout_margin="3dp"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/tv_sdt_khach_hang_admin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="So dien thoai"
+            android:textColor="#000000"
+            android:layout_margin="3dp"
+            android:textSize="16dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_ngay_dat_hang_admin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngay dat hang"
+            android:textColor="#000000"
+            android:layout_margin="3dp"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/tv_trang_thai_admin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trang thai"
+            android:textColor="#000000"
+            android:layout_margin="3dp"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/tv_slsp_da_thanh_toan_admin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="So luong"
+            android:textColor="#000000"
+            android:layout_margin="3dp"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/tv_ten_don_hang_admin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ten san pham"
+            android:textColor="#000000"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#FDBD8E" /> <!-- Màu đen -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_tong_tien_admin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tong tien"
+                android:textColor="#FDBD8E"
+                android:fontFamily="serif"
+                android:layout_margin="3dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/tv_thanh_toan_admin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thanh toan"
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:layout_margin="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

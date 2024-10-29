@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nv_qlsp"
+        android:icon="@drawable/quanlisanpham"
+        android:title="Quản lí sản phẩm" />
+    <item
+        android:id="@+id/nv_qlhd"
+        android:icon="@drawable/quanlihoadon"
+        android:title="Quản lí hóa đơn" />
+
+    <item
+        android:id="@+id/nv_qldt"
+        android:icon="@drawable/icondoanhthu"
+        android:title="Thống kê doanh thu" />
+    <item
+        android:id="@+id/nv_qlsl"
+        android:icon="@drawable/chart"
+        android:title="Thống kê số lượng" />
+
+
+    <item android:title="Khác">
+        <menu>
+            <item android:id="@+id/log_out"
+                android:title="Đăng xuất"
+                android:icon="@drawable/logout"/>
+        </menu>
+
+    </item>
+
+</menu>

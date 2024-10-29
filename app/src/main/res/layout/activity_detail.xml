@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:id="@+id/rlo"
+    android:background="#FFF8F5"
+    tools:context=".activity.DetailActivity">
+
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/backbutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Chi tiết sản phẩm"
+        android:textSize="25sp"
+        android:fontFamily="serif"
+        android:textStyle="bold" />
+
+
+
+    <ImageView
+        android:background="@drawable/custom_toolbar"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="10dp"
+        android:backgroundTint="#FFF8F5"
+        android:layout_below="@id/ivBack"
+        android:src="@drawable/vanslogo" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivImage"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Air Force 1 Shadow" />
+
+    <TextView
+        android:textColor="#FDBD8E"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:fontFamily="serif"
+        android:text="95$" />
+
+    <LinearLayout
+        android:id="@+id/lnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrice"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="#00008b"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/txtSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lnStart"
+        android:fontFamily="serif"
+        android:text="Select size" />
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/lnSize"
+        android:gravity="center"
+        android:layout_below="@id/txtSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_Size36"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:text="36" />
+
+        <TextView
+            android:id="@+id/tv_Size37"
+            android:layout_marginLeft="3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:text="37" />
+
+        <TextView
+            android:id="@+id/tv_Size38"
+            android:layout_marginLeft="3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:text="38" />
+
+        <TextView
+            android:id="@+id/tv_Size39"
+            android:layout_marginLeft="3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:text="39" />
+
+        <TextView
+            android:id="@+id/tv_Size40"
+            android:layout_marginLeft="3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:text="40" />
+
+        <TextView
+            android:id="@+id/tv_Size41"
+            android:layout_marginLeft="3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:text="41" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lnSize"
+        android:layout_above="@id/btnAddToCart">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:text="Hiện nay, không quá khó để các bạn lựa chọn cho mình một đôi giày thể thao đến từ nhiều thương hiệu khác nhau. Tuy nhiên, nếu vẫn đang loay hoay chưa biết mua phiên bản nào" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:textAlignment="center"
+        app:backgroundTint="@null"
+        android:background="@drawable/custom_btn"
+        android:drawableRight="@drawable/carthome"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Thêm vào giỏ hàng"
+        android:layout_width="190dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#9ECDF1"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/back_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backbutton"/>
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/admin"
+        android:layout_gravity="center">
+    </ImageView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25px"
+            android:background="@drawable/edt_admin_login"
+            android:hint="Tài khoản"
+            android:padding="35px"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtMatKhau"
+            android:layout_margin="25px"
+            android:padding="35px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            android:hint="Mật khẩu"
+            android:background="@drawable/edt_admin_login"/>
+        <Button
+            android:id="@+id/btnLoginAdmin"
+            android:layout_margin="25px"
+            android:padding="30px"
+            app:backgroundTint="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Login"
+            android:textSize="15dp"
+            android:background="@drawable/edt_admin_login"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_back_to_login_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#504E4B"
+                android:textStyle="bold"
+                android:text="Login with user account  "/>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+</LinearLayout>

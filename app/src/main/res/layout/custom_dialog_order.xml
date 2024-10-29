@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:padding="5dp"
+    android:background="@drawable/total_price">
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/tv_Product_name"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ten san pham"
+                />
+            <TextView
+                android:id="@+id/tv_Product_Price"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá"
+                />
+            <TextView
+                android:id="@+id/tv_Size"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size: "
+                />
+            <TextView
+                android:id="@+id/tv_so_luong_san_pham"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soluong: "
+                />
+            <TextView
+                android:id="@+id/tv_maHoaDon"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:text=""
+                />
+            <TextView
+                android:id="@+id/tv_idSP"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:text="ID"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_hovaten"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Họ và tên"/>
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_below="@+id/txt_hovaten"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_dialog_order"
+                android:hint="Họ tên"
+                android:layout_marginTop="5dp"
+                android:padding="35px"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/txt_sdt"
+                android:layout_below="@+id/edtName"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại"/>
+            <EditText
+                android:id="@+id/edtPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_sdt"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_dialog_order"
+                android:hint="Số điện thoại"
+                android:padding="35px"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/txt_diachi"
+                android:layout_below="@+id/edtPhoneNumber"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ"/>
+            <EditText
+                android:id="@+id/edtDiaChi"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_diachi"
+                android:background="@drawable/custom_dialog_order"
+                android:hint="Địa chỉ"
+                android:padding="35px"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/pttt"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_pttt"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="1dp"
+                android:padding="10dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/custom_dialog_order" />
+
+
+            <TextView
+                android:id="@+id/tv_pttt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtDiaChi"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="Phương thức thanh toán: "
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnConfilm"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pttt"
+                android:layout_marginTop="10dp"
+                android:text="Mua hàng"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_btn_checkout"
+                app:backgroundTint="@null" />
+            <Button
+                android:id="@+id/btnHuy"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnConfilm"
+                android:layout_marginTop="10dp"
+                android:text="Hủy"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_btn_checkout"
+                app:backgroundTint="@null" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
