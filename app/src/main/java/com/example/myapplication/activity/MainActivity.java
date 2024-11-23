@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                         public void onFailure(@NonNull Exception e) {
                             // Xảy ra lỗi khi truy cập Firestore, đăng xuất người dùng
                             FirebaseAuth.getInstance().signOut();
-                            Toast.makeText(MainActivity.this, "Lỗi: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Lỗi nè: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     });
         }
